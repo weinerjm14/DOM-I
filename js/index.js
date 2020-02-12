@@ -78,12 +78,17 @@ let middleimg = document.getElementById('middle-img');
 middleimg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 navbar.forEach(item => item.style.color = 'green');
+
 let newA1 = document.createElement('a');
 newA1.textContent = "Jenn Rocks";
 newA1.setAttribute('href', "#");
 newA1.style.color = "green";
+
 let newA2 = document.createElement('a');
 newA2.textContent = "Coffee is Life"
 newA2.setAttribute('href', "#");
 newA2.style.color = "green";
-navbar.appendChild(newA1);
+
+let headerNav = document.querySelector('nav');
+headerNav.appendChild(newA1);
+headerNav.prepend(newA2);
