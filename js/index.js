@@ -48,26 +48,31 @@ navbar[3].textContent = siteContent["nav"]["nav-item-4"];
 navbar[4].textContent = siteContent["nav"]["nav-item-5"];
 navbar[5].textContent = siteContent["nav"]["nav-item-6"];
 
-let ctah1 = document.getElementByTagName(h1);
+let ctah1 = document.querySelector('h1');
 ctah1.textContent = siteContent["cta"]["h1"];
-let ctabutton = document.getElementByTagName(button);
+let ctabutton = document.querySelector('button');
 ctabutton.textContent = siteContent["cta"]["button"];
 let ctaimg = document.getElementById("cta-img");
 ctaimg.setAttribute('src', siteContent["cta"]["img-src"])
 
-let h4s = document.querySelectorAll(h4);
+let h4s = document.querySelectorAll('h4');
 h4s[0].textContent = siteContent["main-content"]["features-h4"];
 h4s[1].textContent = siteContent["main-content"]["about-h4"];
 h4s[2].textContent = siteContent["main-content"]["services-h4"];
 h4s[3].textContent = siteContent["main-content"]["product-h4"];
 h4s[4].textContent = siteContent["main-content"]["vision-h4"];
+h4s[5].textContent = siteContent["contact"]["contact-h4"];
 
-let contentps = document.querySelectorAll(p);
+let contentps = document.querySelectorAll('p');
 contentps[0].textContent = siteContent["main-content"]["features-content"];
 contentps[1].textContent = siteContent["main-content"]["about-content"];
-contentps[2].textContent = siteContent["main-content"]["services-h4"];
+contentps[2].textContent = siteContent["main-content"]["services-content"];
 contentps[3].textContent = siteContent["main-content"]["product-content"];
 contentps[4].textContent = siteContent["main-content"]["vision-content"];
+contentps[5].textContent = siteContent["contact"]['address'];
+contentps[6].textContent = siteContent["contact"]["phone"];
+contentps[7].textContent = siteContent["contact"]["email"];
+contentps[8].textContent = siteContent["footer"]['copyright'];
 
-let middleimg = DocumentTimeline.getElementById('middle-img');
+let middleimg = document.getElementById('middle-img');
 middleimg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
