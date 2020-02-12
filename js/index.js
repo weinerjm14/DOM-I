@@ -92,3 +92,10 @@ newA2.style.color = "green";
 let headerNav = document.querySelector('nav');
 headerNav.appendChild(newA1);
 headerNav.prepend(newA2);
+
+// stretch
+contentps.forEach(item => item.style.color = 'purple');
+ctabutton.style.backgroundColor = "purple";
+h4s.forEach(item => item.style.fontSize = '30px');
+// ctabutton.style.color = 'red';
+h4s.forEach(item => item.style.color = "dodgerblue");
